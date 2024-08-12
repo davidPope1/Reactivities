@@ -10,7 +10,6 @@ function App() {
     axios.get('http://localhost:5000/api/activities')
       .then(response => {
         console.log(response)
-        console.log('daasdasdasd')
         setActivities(response.data)
       })
   }, [])
